@@ -1,0 +1,109 @@
+
+body{
+    background-image: linear-gradient(to left, #5e548e 0%, #be95c4 100%);
+}
+
+.BackB{
+
+    border-width: 3px;
+    border-color: #e0b1cb;
+    border-style: double;
+    border-radius: 50px;
+    border-top-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    
+    padding: 10px 3em;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    
+    color: #e0b1cb;
+    align-content: center;
+    font-size: large;
+
+    transition-duration: .3s;
+    background-position: left center;
+    background-color:  #5e548e;
+
+    font-family: Consolas, Arial;
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.BackB:hover {
+    transition: all .3s cubic-bezier(0, 0, 0, 1);;
+    border-color: #231942;
+    color: #231942;
+    background-color:  #e0b1cb;
+}
+
+#mainT{
+    font-size: larger;
+    text-align: center;
+
+    font-family: 'Consolas', Arial;
+    align-self: center;
+    align-content: center;
+
+
+    color: #231942;
+    margin: 0px;
+}   
+
+#mainB{
+
+    font-family: 'Consolas', Arial;
+    align-self: center;
+    align-content: center;
+
+
+    color: #231942;
+    margin: 25px;
+
+    margin-top: 100px;
+
+    font-size: medium;
+
+    text-align: center;
+}
+
+#inputB{
+
+    font-family: 'Consolas', Arial;
+    align-self: center;
+    align-content: center;
+
+
+    color: #231942;
+
+    margin: 25%;
+    margin-left: 30%;
+
+    margin-top: 20px;
+    padding: 5px;
+
+    align-content: center;
+}
+
+#Global{
+    width: 25%;
+    margin-left:  37.7%;
+
+    margin-top: 100px;
+
+    padding-top:  150px;
+    padding-bottom: 50px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    border-top: 2px solid #231942;
+    border-left: 1px solid #231942;
+    border-right: 10px solid #231942;
+    border-bottom: 10px solid #231942;
+    border-radius: 50px;
+
+
+
+    background-color: #e0b1cb
+}
+
