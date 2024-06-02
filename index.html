@@ -1,12 +1,99 @@
-<!DOCTYPE html>
 
-<html>
-<head>
-  <title> Holis </title>
-</head>
+body{
+    background-image: linear-gradient(to left, #5e548e 0%, #be95c4 100%);
+}
 
-<body>
-  <body> XD </body>
-</body>
-  
-</html>
+
+#ButtonsT{
+    font-size: larger;
+    text-align: center;
+
+    font-family: 'Consolas', Arial;
+
+    justify-content: space-between;
+
+    display: flex;
+
+    color: #231942;
+}   
+
+
+
+#insideT
+{
+    text-align: center;
+}
+
+#ImageP
+{
+    
+    margin-top: 15px;
+    
+}
+
+img{
+    
+    border-color: black;
+    border-width: 15px;
+    height: 40px;
+    width: 40px;
+
+    
+}
+
+#grad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#Global, #Global1, #Dis, .Spotify{
+    width: 25%;
+    height: 100%;
+
+    margin-top: 20px;
+
+    padding-top:  10px;
+    padding-bottom: 10px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    border-top: 2px solid #231942;
+    border-left: 1px solid #231942;
+    border-right: 10px solid #231942;
+    border-bottom: 10px solid #231942;
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    background-color: #e0b1cb;
+
+    transition-duration: .2s;
+}
+
+#Dis
+{
+    background-color: #5e548e;
+    cursor: not-allowed;
+}
+
+#Global:hover, #Dis:hover{
+    transform: rotateZ( 2.5deg );
+    width: 35%;
+}
+
+#Global1:hover, .Spotify:hover{
+    transform: rotateZ( -2.5deg );
+    width: 35%;
+}
+
+.Spotify:hover + .spotifySong{
+    height: 2500px;
+    display: block;
+}
+
+.spotifySong{
+    
+}
