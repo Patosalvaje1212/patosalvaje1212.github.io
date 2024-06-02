@@ -48,11 +48,11 @@ img{
     flex-direction: column;
 }
 
-#Global, #Global1, #Dis, .Spotify{
+#Global, #Global1, #Dis{
     width: 25%;
     height: 100%;
 
-    margin-top: 20px;
+    margin-top: 50px;
 
     padding-top:  10px;
     padding-bottom: 10px;
@@ -84,16 +84,52 @@ img{
     width: 35%;
 }
 
-#Global1:hover, .Spotify:hover{
+#Global1:hover{
     transform: rotateZ( -2.5deg );
     width: 35%;
 }
 
-.Spotify:hover + .spotifySong{
-    height: 2500px;
+.Spotify:hover .spotifySong{
+    height: 100px;
+    display: block;
+}
+.ItchPage:hover .ItchGames{
+    height: 175px;
     display: block;
 }
 
-.spotifySong{
-    
+.spotifySong, .ItchGames{
+    display: none;
+}
+
+.ItchGames{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Global1:hover, #Global:hover{
+    background-color: rgb(231, 188, 212);
+}
+
+
+.profile img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.tittle{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-items: center;
+
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Consolas, monospace, Arial;
+
+    color:#231942;
 }
