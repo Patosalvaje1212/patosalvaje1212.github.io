@@ -3,9 +3,8 @@ body{
     background-image: linear-gradient(to left, #5e548e 0%, #be95c4 100%);
 }
 
-
 #ButtonsT{
-    font-size: larger;
+    font-size: medium;
     text-align: center;
 
     font-family: 'Consolas', Arial;
@@ -15,9 +14,7 @@ body{
     display: flex;
 
     color: #231942;
-}   
-
-
+}
 
 #insideT
 {
@@ -33,32 +30,26 @@ body{
 
 img{
     
-    border-color: black;
+    border-color:black;
     border-width: 15px;
     height: 40px;
     width: 40px;
 
+    margin: 10px;
+}
+
     
-}
-
-#grad{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 #Global, #Global1, #Dis{
-    width: 25%;
+    width: 75%;
     height: 100%;
 
-    margin-top: 50px;
+    margin-top: 10px;
 
-    padding-top:  10px;
-    padding-bottom: 10px;
+    padding-top:  5px;
+    padding-bottom: 5px;
 
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     
     border-top: 2px solid #231942;
     border-left: 1px solid #231942;
@@ -73,6 +64,122 @@ img{
     transition-duration: .2s;
 }
 
+
+.tittle{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-items: center;
+
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Consolas, monospace, Arial;
+
+    font-size: small;
+    color:#231942;
+}
+
+@media only screen and (min-width: 600px)
+{
+    #ButtonsT{
+        font-size: larger;
+        text-align: center;
+    
+        font-family: 'Consolas', Arial;
+    
+        justify-content: space-between;
+    
+        display: flex;
+    
+        color: #231942;
+    }
+
+    img{
+    
+        border-color: black;
+        border-width: 15px;
+        height: 40px;
+        width: 40px;
+    
+        
+    }
+
+        
+    #Global, #Global1, #Dis{
+        width: 25%;
+        height: 100%;
+
+        margin-top: 50px;
+
+        padding-top:  10px;
+        padding-bottom: 10px;
+
+        padding-left: 25px;
+        padding-right: 25px;
+        
+        border-top: 2px solid #231942;
+        border-left: 1px solid #231942;
+        border-right: 10px solid #231942;
+        border-bottom: 10px solid #231942;
+        border-radius: 50px;
+
+        cursor: pointer;
+
+        background-color: #e0b1cb;
+
+        transition-duration: .2s;
+    }
+
+    .tittle{
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+        justify-items: center;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        font-family: Consolas, monospace, Arial;
+        font-size: medium;
+        color:#231942;
+    }
+
+    #Global:hover, #Dis:hover{
+        transform: rotateZ( 2.5deg );
+        width: 35%;
+    }
+    
+    #Global1:hover{
+        transform: rotateZ( -2.5deg );
+        width: 35%;
+    }
+    
+    .Spotify:hover .spotifySong{
+        height: 100px;
+        display: block;
+    }
+    .ItchPage:hover .ItchGames{
+        height: 175px;
+        display: block;
+    }
+    
+    .spotifySong, .ItchGames{
+        display: none;
+    }
+
+}
+
+
+#grad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #Dis
 {
     background-color: #5e548e;
@@ -81,21 +188,19 @@ img{
 
 #Global:hover, #Dis:hover{
     transform: rotateZ( 2.5deg );
-    width: 35%;
+    width: 85%;
 }
 
 #Global1:hover{
     transform: rotateZ( -2.5deg );
-    width: 35%;
+    width: 85%;
 }
 
 .Spotify:hover .spotifySong{
-    height: 100px;
-    display: block;
+    height: calc(100% + 40px);
 }
 .ItchPage:hover .ItchGames{
-    height: 175px;
-    display: block;
+
 }
 
 .spotifySong, .ItchGames{
@@ -117,19 +222,4 @@ img{
     height: 150px;
     width: 150px;
     border-radius: 50%;
-}
-
-.tittle{
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-items: center;
-
-    margin: 0px;
-    padding: 0px;
-
-    font-family: Consolas, monospace, Arial;
-
-    color:#231942;
 }
