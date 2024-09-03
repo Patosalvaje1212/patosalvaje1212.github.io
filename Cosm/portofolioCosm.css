@@ -1,0 +1,120 @@
+body{
+    background-image: linear-gradient(to left, #123A6E 0%, #1D6BB4 100%);
+}
+
+.profile img
+    {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+    }
+
+    h1
+    {
+        font-size: x-large;
+        text-align: center;
+
+    }
+
+    h2
+    {
+        font-size: large;
+        text-align: center;
+
+        width: 50%;
+        height: 100%;
+
+        margin-top: 50px;
+
+        padding-top:  10px;
+        padding-bottom: 10px;
+
+        padding-left: 25px;
+        padding-right: 25px;
+        
+        border-top: 2px solid #061227;
+        border-left: 1px solid #061227;
+        border-right: 10px solid #061227;
+        border-bottom: 10px solid #061227;
+        border-radius: 50px;
+
+        cursor: context-menu;
+
+        background-color: #89CCEC;
+
+    }
+
+    h3
+    {
+        font-size: medium;
+        text-align: center;
+    }
+
+    .tittle
+    {
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+        justify-items: center;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        font-family: Consolas, monospace, Arial;
+        color:#061227;
+    }
+
+    .subTitle
+    {
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+        justify-items: center;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        font-family: Consolas, monospace, Arial;
+        font-size: medium;
+        color:#061227;
+    }
+
+    .ImageList
+    {
+        border-top: 2px solid #061227;
+        border-left: 1px solid #061227;
+        border-right: 10px solid #061227;
+        border-bottom: 10px solid #061227;
+        border-radius: 50px;
+    }
+
+    .backButton
+    {
+
+        text-align: center;
+        
+        margin: 80%;
+        width: 20%;
+        height: 100%;
+
+        margin-top: 50px;
+
+        padding-top:  10px;
+        padding-bottom: 10px;
+
+        padding-left: 25px;
+        padding-right: 25px;
+        
+        border-top: 2px solid #061227;
+        border-left: 1px solid #061227;
+        border-right: 10px solid #061227;
+        border-bottom: 10px solid #061227;
+        border-radius: 50px;
+
+        cursor: pointer;
+
+        background-color: #89CCEC;
+
+    }
