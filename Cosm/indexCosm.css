@@ -1,138 +1,18 @@
 
 body{
-    background-image: linear-gradient(to left, #5e548e 0%, #be95c4 75%);
+    background-image: linear-gradient(to left, #123A6E 0%, #1D6BB4 100%);
 }
-
-#ButtonsT{
-    font-size: medium;
-    text-align: center;
-
-    font-family: 'Consolas', Arial;
-
-    justify-content: space-between;
-
-    display: flex;
-
-    color: #231942;
-}
-
-#insideT
-{
-    text-align: center;
-}
-
-#ImageP
-{
-    
-    margin-top: 15px;
-    
-}
-
-img{
-    
-    border-color:black;
-    border-width: 15px;
-    height: 40px;
-    width: 40px;
-
-    margin: 10px;
-}
-
-    
-#Global, #Global1, #Dis{
-    width: 75%;
-    height: 100%;
-
-    margin-top: 10px;
-
-    padding-top:  5px;
-    padding-bottom: 5px;
-
-    padding-left: 10px;
-    padding-right: 10px;
-    
-    border-top: 2px solid #231942;
-    border-left: 1px solid #231942;
-    border-right: 10px solid #231942;
-    border-bottom: 10px solid #231942;
-    border-radius: 50px;
-
-    cursor: pointer;
-
-    background-color: #e0b1cb;
-
-    transition-duration: .2s;
-}
-
-
-.tittle{
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-items: center;
-
-    margin: 0px;
-    padding: 0px;
-
-    font-family: Consolas, monospace, Arial;
-
-    font-size: small;
-    color:#231942;
-}
-
 @media only screen and (min-width: 600px)
 {
-    #ButtonsT{
-        font-size: larger;
-        text-align: center;
-    
-        font-family: 'Consolas', Arial;
-    
-        justify-content: space-between;
-    
-        display: flex;
-    
-        color: #231942;
+    .profile img
+    {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
     }
 
-    img{
-    
-        border-color: black;
-        border-width: 15px;
-        height: 40px;
-        width: 40px;
-    
-        
-    }
-
-        
-    #Global, #Global1, #Dis{
-        width: 25%;
-        height: 100%;
-
-        margin-top: 50px;
-
-        padding-top:  10px;
-        padding-bottom: 10px;
-
-        padding-left: 25px;
-        padding-right: 25px;
-        
-        border-top: 2px solid #231942;
-        border-left: 1px solid #231942;
-        border-right: 10px solid #231942;
-        border-bottom: 10px solid #231942;
-        border-radius: 50px;
-
-        cursor: pointer;
-
-        background-color: #e0b1cb;
-
-        transition-duration: .2s;
-    }
-
-    .tittle{
+    .tittle
+    {
         display: flex;
         flex-direction: column;
     
@@ -144,82 +24,79 @@ img{
     
         font-family: Consolas, monospace, Arial;
         font-size: medium;
-        color:#231942;
+        color:#061227;
     }
 
-    #Global:hover, #Dis:hover{
-        transform: rotateZ( 2.5deg );
-        width: 35%;
-    }
-    
-    #Global1:hover{
-        transform: rotateZ( -2.5deg );
-        width: 35%;
-    }
-    
-    .Spotify:hover .spotifySong{
-        height: 100px;
-        display: block;
-    }
-    .ItchPage:hover .ItchGames{
-        height: 175px;
+    .grad
+    {
         display: flex;
-    }
+        flex-direction: column;
     
-    .spotifySong, .ItchGames{
-        display: none;
+        align-items: center;
+        justify-items: center;
+    
+        margin: 0px;
+        padding: 0px;
+    
+        font-family: Consolas, monospace, Arial;
+        font-size: medium;
+        color:#061227;
     }
 
-}
+    .ButtonsT
+    {
+        display: flex;
+        
+        justify-items: center;
+        justify-content: space-around;
+        align-items: center;
 
+        cursor: pointer;
+    }
 
-#grad{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+    .GeneralBut
+    {
 
-#Dis
-{
-    background-color: #5e548e;
-    cursor: not-allowed;
-}
+        width: 25%;
+        height: 100%;
 
-#Global:hover, #Dis:hover{
-    transform: rotateZ( 2.5deg );
-    width: 85%;
-}
+        margin-top: 50px;
 
-#Global1:hover{
-    transform: rotateZ( -2.5deg );
-    width: 85%;
-}
+        padding-top:  10px;
+        padding-bottom: 10px;
 
-.Spotify:hover .spotifySong{
-    height: calc(100% + 40px);
-}
-.ItchPage:hover .ItchGames{
+        padding-left: 25px;
+        padding-right: 25px;
+        
+        border-top: 2px solid #061227;
+        border-left: 1px solid #061227;
+        border-right: 10px solid #061227;
+        border-bottom: 10px solid #061227;
+        border-radius: 50px;
 
-}
+        cursor: pointer;
 
-.spotifySong, .ItchGames{
-    display: none;
-}
+        background-color: #89CCEC;
 
-.ItchGames{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        transition-duration: .2s;
+    }
 
-#Global1:hover, #Global:hover{
-    background-color: rgb(231, 188, 212);
-}
+    .GeneralBut:hover
+    {
+        background-color: #42A1E0;
+    }
 
+    .insideT
+    {
+        padding-right: 25%;
+        justify-self: right;
+    }
 
-.profile img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+    .ImageP img
+    {
+        height: 50px;
+        width: 50px;
+        
+    }
+
 }
