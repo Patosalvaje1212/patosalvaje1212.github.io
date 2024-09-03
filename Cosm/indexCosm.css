@@ -2,15 +2,33 @@
 body{
     background-image: linear-gradient(to left, #123A6E 0%, #1D6BB4 100%);
 }
-@media only screen and (min-width: 600px)
-{
+
     .profile img
     {
-        height: 150px;
-        width: 150px;
+        height: 90px;
+        width: 90px;
         border-radius: 50%;
     }
 
+    h1
+    {
+        font-size: x-large;
+        text-align: center;
+
+    }
+
+    h2
+    {
+        font-size: large;
+        text-align: center;
+    }
+
+    h3
+    {
+        font-size: medium;
+        text-align: center;
+    }
+    
     .tittle
     {
         display: flex;
@@ -23,7 +41,6 @@ body{
         padding: 0px;
     
         font-family: Consolas, monospace, Arial;
-        font-size: medium;
         color:#061227;
     }
 
@@ -57,7 +74,7 @@ body{
     .GeneralBut
     {
 
-        width: 25%;
+        width: 50%;
         height: 100%;
 
         margin-top: 50px;
@@ -78,10 +95,15 @@ body{
 
         background-color: #89CCEC;
 
-        transition-duration: .2s;
+        transition-duration: .5s;
     }
 
     .GeneralBut:hover
+    {
+        background-color: #42A1E0;
+    }
+
+    .GeneralBut:active
     {
         background-color: #42A1E0;
     }
@@ -98,5 +120,49 @@ body{
         width: 50px;
         
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px)
+{
+    .profile img
+    {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    
+    h1
+    {
+        font-size: xx-large;
+    } 
+    
+    h2
+    {
+        font-size: x-large;
+    }
+
+    h3
+    {
+        font-size: large;
+    }
+
+    .GeneralBut
+    {
+
+        width: 35%;
+        height: 100%;
+    }
+
 
 }
