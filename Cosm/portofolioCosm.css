@@ -2,11 +2,14 @@ body{
     background-image: linear-gradient(to left, #123A6E 0%, #1D6BB4 100%);
 }
 
-.profile img
+    .profile img
     {
         height: 90px;
         width: 90px;
-        border-radius: 50%;
+        border-radius: 25%;
+
+        
+        border: 3px solid #061227;
     }
 
     h1
@@ -88,6 +91,16 @@ body{
         border-right: 10px solid #061227;
         border-bottom: 10px solid #061227;
         border-radius: 50px;
+
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        margin-right: 20%;
+        margin-left: 20%;
+
+        background-color: #5079af;
     }
 
     .backButton
@@ -117,4 +130,23 @@ body{
 
         background-color: #89CCEC;
 
+    }
+
+    .ImageList img
+    {
+        border-radius: 5%;
+        height: 150px;
+        width: 150px;
+
+        margin-top: 5px;
+
+        transition-duration: .5s;
+        border: 3px solid #061227;
+    }
+
+    .ImageList img:hover
+    {
+        
+
+        border: 1px solid #061227;
     }
