@@ -101,6 +101,8 @@ body{
         margin-left: 5%;
 
         width: 90%;
+        align: center;
+        justify: center;
 
         background-color: #5079af;
     }
@@ -110,7 +112,7 @@ body{
 
         text-align: center;
         
-        margin: 80%;
+        margin: 10%;
         width: 20%;
         height: 100%;
 
@@ -143,6 +145,9 @@ body{
 
         transition-duration: .5s;
         border: 3px solid #061227;
+
+        align: center;
+        justify: center;
     }
 
 
