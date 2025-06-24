@@ -4,7 +4,7 @@
     --secondary: #ff7f50;
     --dark: #1a1a2e;
     --light: #f8f8ff;
-    --accent: #9c27b0;
+    --accent: #d57fe4;
     --pixel-size: 4px;
 }
 
@@ -281,8 +281,8 @@ nav::after {
 
 .about-image img {
     max-width: 100%;
-    border-radius: 8px;
-    border: 4px solid var(--primary);
+    border-radius: 50%;
+    border: 10px solid var(--primary);
     image-rendering: pixelated;
 }
 

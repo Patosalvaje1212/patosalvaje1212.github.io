@@ -293,9 +293,8 @@ footer {
     background: var(--dark);
     padding: 2rem;
     border-radius: 8px;
-    max-width: 800px;
     width: 90%;
-    max-height: 90vh;
+    height: 90%;
     overflow-y: auto;
     position: relative;
     border: 2px solid var(--primary);
