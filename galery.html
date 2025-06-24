@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patosalvaje's Gallery</title>
+    <link rel = "stylesheet" href ="css/galery.css">
+
+</head>
+<body>
+    <div class="pixel-grid"></div>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Patosalvaje's Gallery</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="./index.html">Go Back</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="gallery-header">
+            <h2 class="gallery-title">Pixel Art Collection</h2>
+            <p>Explore my latest pixel art creations and game assets</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ilustration">Ilustrations</button>
+                <button class="filter-btn" data-filter="game">Game Related</button>
+                <button class="filter-btn" data-filter="misc">Misc</button>
+            </div>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Artwork 1 -->
+            <div class="art-card visible small" data-category="misc">
+                <div class="art-img-container">
+                    <img src="res/TinyApps.png" alt="Tiny Apps" class="art-img">
+                </div>
+                <div class="art-info">
+                    
+                    <h3 class="art-title">Tiny Apps</h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>10x10 px ( each icon ) </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="tiny-apps">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 2 -->
+            <div class="art-card visible medium" data-category="ilustration">
+                <div class="art-img-container">
+                    <img src="res/Cute.png" alt="Cute Moon" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Cute Moon</h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>128x128 px</span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="cute-pic">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 3 -->
+            <div class="art-card visible small" data-category="game">
+                <div class="art-img-container">
+                    <img src="res/Tileset-test.png" alt="Tileset Test" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Topdown Tileset Test</h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>16x16 px ( each tile )</span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="tileset-test">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 4 -->
+            <div class="art-card visible small" data-category="misc">
+                <div class="art-img-container">
+                    <img src="res/LessTinyApps.png" alt="Tileset Test" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Less Tiny Apps</h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>16x16 px ( each icon )</span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="less-tiny-apps">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 4.5 -->
+            <div class="art-card visible large" data-category="ilustration">
+                <div class="art-img-container">
+                    <img src="res/Cactus.png" alt="Cactus Ilustration" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Cactus Ilustration: A not very welcome visitant </h3>
+                    <div class="art-meta">
+                        <span>2024</span>
+                        <span>16x16 px </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="enemy-fly">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 4.5 -->
+            <div class="art-card visible small" data-category="misc">
+                <div class="art-img-container">
+                    <img src="res/PvzRemake.png" alt="Pvz Remake" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Remake of some PvZ plant sprites </h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>32x32 px ( each sprite ) </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="pvz-remake-1">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 4.5 -->
+            <div class="art-card visible medium" data-category="misc">
+                <div class="art-img-container">
+                    <img src="res/PvzRemake2.png" alt="Pvz Remake 2" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Remake of some PvZ zombie sprites </h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>32x48 px ( each zombie ) </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="pvz-remake-2">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 5 -->
+            <div class="art-card visible medium" data-category="game">
+                <div class="art-img-container">
+                    <img src="res/EnemyFly.gif" alt="Enemy Fly" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Flying Steampunk Enemy Animation</h3>
+                    <div class="art-meta">
+                        <span>2024</span>
+                        <span>16x16 px </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="enemy-fly">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 6 -->
+            <div class="art-card visible large" data-category="game">
+                <div class="art-img-container">
+                    <img src="res/EnemyJump.gif" alt="Enemy Jump" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Jumping Steampunk Enemy Animation</h3>
+                    <div class="art-meta">
+                        <span>2024</span>
+                        <span>16x32 px </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="enemy-jump">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 7 -->
+            <div class="art-card visible medium" data-category="game">
+                <div class="art-img-container">
+                    <img src="res/EnemyWalk.gif" alt="Enemy Walk" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Walking Steampunk Enemy Animation</h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>16x24px </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="enemy-walk">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 8 -->
+            <div class="art-card visible small" data-category="gmCh">
+                <div class="art-img-container">
+                    <img src="res/CharPreview.gif" alt="Character Preview" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Steampunk Character Preview</h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>16x24px </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="character-prev">View Full</a>
+                </div>
+            </div>
+
+            
+            <!-- Artwork 9 -->
+            <div class="art-card visible medium" data-category="game">
+                <div class="art-img-container">
+                    <img src="res/EnemyWalkO.gif" alt="Enemy Walk O" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Walking Oxidiced Steampunk Enemy Animation</h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>16x24px </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="enemy-o-walk">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 10 -->
+            <div class="art-card visible small" data-category="game">
+                <div class="art-img-container">
+                    <img src="res/Boss.png" alt="Boss" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Steampunk Boss Enemy: The T(w)ins</h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>16x24px </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="boss">View Full</a>
+                </div>
+            </div>
+
+
+            <!-- Artwork 11 -->
+            <div class="art-card visible medium" data-category="game">
+                <div class="art-img-container">
+                    <img src="res/MainChar.gif" alt="MainCharacter" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Steampunk Character Animations</h3>
+                    <div class="art-meta">
+                        <span>2024</span>
+                        <span>16x24px </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="main-char">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 12 -->
+            <div class="art-card visible medium" data-category="ilustration">
+                <div class="art-img-container">
+                    <img src="res/HammerW.png" alt="Hammer Blueprint" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Steampunk Hammer Blueprint</h3>
+                    <div class="art-meta">
+                        <span>2024</span>
+                        <span>192x192 px </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="hammer-blueprint">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 13 -->
+            <div class="art-card visible medium" data-category="ilustration">
+                <div class="art-img-container">
+                    <img src="res/SPrincess.png" alt="Silent Princess from BotW" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Silent Princess from BotW</h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>64x64 px </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="silent-princess">View Full</a>
+                </div>
+            </div>
+            
+            <!-- Artwork 14 -->
+            <div class="art-card visible medium" data-category="game">
+                <div class="art-img-container">
+                    <img src="res/FloorT.png" alt="Floor desing test" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Steampunk Floor Desing Test</h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>16x16x px ( each tile ) </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="floor-test">View Full</a>
+                </div>
+            </div>
+
+            <!-- Artwork 15 -->
+            <div class="art-card visible medium" data-category="game">
+                <div class="art-img-container">
+                    <img src="res/Bullet.gif" alt="Bullet Animation" class="art-img">
+                </div>
+                <div class="art-info">
+                    <h3 class="art-title">Steampunk Bullet Enemy Animation</h3>
+                    <div class="art-meta">
+                        <span>2025</span>
+                        <span>32x48 px </span>
+                    </div>
+                    <a href="#" class="view-btn" data-art="bullet-enemy">View Full</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="artModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="" alt="" class="modal-img" id="modalImage">
+            <h2 id="modalTitle"></h2>
+            <div class="art-meta">
+                <span id="modalYear"></span>
+                <span id="modalSize"></span>
+            </div>
+            <p id="modalDesc"></p>
+            <div class="art-tags" id="modalTags"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Patosalvaje. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.art-card').forEach(card => {
+                    card.style.display = (filter === 'all' || card.dataset.category === filter) ? 
+                        'block' : 'none';
+                });
+            });
+        });
+
+        // Modal functionality
+        const modal = document.getElementById('artModal');
+        const modalImg = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalYear = document.getElementById('modalYear');
+        const modalSize = document.getElementById('modalSize');
+        const modalTags = document.getElementById('modalTags');
+        const closeModal = document.querySelector('.close-modal');
+
+        document.querySelectorAll('.view-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const card = btn.closest('.art-card');
+                modalImg.src = card.querySelector('.art-img').src;
+                modalTitle.textContent = card.querySelector('.art-title').textContent;
+                const meta = card.querySelectorAll('.art-meta span');
+                modalYear.textContent = meta[0].textContent;
+                modalSize.textContent = meta[1].textContent;
+                
+                // Rebuild tags
+                modalTags.innerHTML = '';
+                card.querySelectorAll('.tag').forEach(tag => {
+                    const newTag = tag.cloneNode(true);
+                    modalTags.appendChild(newTag);
+                });
+                
+                modal.style.display = 'flex';
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        function setMasonryLayout() {
+            const cards = document.querySelectorAll('.art-card');
+            
+            cards.forEach(card => {
+                const img = card.querySelector('img');
+                const aspectRatio = img.naturalHeight / img.naturalWidth;
+                
+                if (aspectRatio > 1.5) {
+                    card.classList.add('large');
+                } else if (aspectRatio > 1) {
+                    card.classList.add('medium');
+                } else {
+                    card.classList.add('small');
+                }
+            });
+        }
+
+        // Run when images load
+        window.addEventListener('load', setMasonryLayout);
+
+        // Recalculate on resize
+        window.addEventListener('resize', setMasonryLayout);
+
+        // Scroll animation
+        const animateOnScroll = () => {
+            const cards = document.querySelectorAll('.art-card:not(.visible)');
+            cards.forEach((card, index) => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top <= window.innerHeight * 0.8) {
+                    card.classList.add('visible');
+                    card.classList.add(`delay-${(index % 5) + 1}`);
+                }
+            });
+        };
+
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>

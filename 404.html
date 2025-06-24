@@ -1,28 +1,84 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title> Uh, oh! 404 here</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel = "stylesheet" href="Cosm/404Cosm.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href ="css/404.css">
+    <title>404 - Page Not Found</title>
 </head>
+<body>
+    <div class="pixel-grid"></div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const colors = ['#6a5acd', '#ff7f50', '#9c27b0', '#4CAF50'];
+            
+            function startPixelRain() {
 
-<html>
-    <div id="grad">
-        <div id="Global">
-            <body>
-                <div id="mainT">
-                    <header><h1> 404</h1> <h1>I dont know how are you here</h1></header>
-                </div>
-
-                <div id="mainB">
-                    <body>Maybe there is a wrong link, or maybe this page is still under construction, either way, you probably shouldn't be seeing this</body>
-                </div>
-
-                <div id="inputB">
-                    <input type="button" value="Go back" class="BackB" onclick="document.location='https://patosalvaje1212.github.io/'">
-                </div>
-
+                for (let i = 0; i < 50; i++) {
+                    setTimeout(() => createPixel(), Math.random() * 3000);
+                }
                 
-            </body>
-        </div>
+                setInterval(() => {
+                    if (Math.random() > 0.3) {
+                        createPixel();
+                    }
+                }, 300);
+            }
+            
+            function createPixel() {
+                const pixel = document.createElement('div');
+                pixel.className = 'pixel';
+                pixel.style.setProperty('--pixel-opacity', Math.random() * 0.5 + 0.3);
+                pixel.style.left = Math.random() * 100 + 'vw';
+                
+                const size = Math.random() * 8 + 4;
+                pixel.style.width = size + 'px';
+                pixel.style.height = size + 'px';
+                
+                pixel.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                
+                const duration = Math.random() * 4 + 8;
+                pixel.style.animationDuration = `${duration}s`;
+                
+                pixel.style.transform = `translateX(${Math.random() * 20 - 10}px)`;
+                
+                document.body.appendChild(pixel);
+                
+                setTimeout(() => {
+                    if (pixel.parentNode) {
+                        pixel.remove();
+                    }
+                }, duration * 1000);
+            }
+            
+            startPixelRain();
+        });
+    </script>
+
+    <div class="error-container">
+        <div class="logo">Patosalvaje</div>
+        <div class="error-code glitch">404</div>
+        <div class="error-message">Looks like the page you're looking for is not here.</div>
+        
+        <p>Maybe the page moved, got deleted, or never existed in the first place. Try returning to our homepage and trying again!</p>
+        <p>If you believe this to be a bug, contact me.</p>
+        
+        <a href="./index.html" class="btn">Return to Homepage</a>
     </div>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://x.com/Patosalvaje1212/" aria-label="Twitter" target="_blank">🐦</a>
+                <a href="https://patosalvaje.itch.io" aria-label="Itch.io" target="_blank">🎮</a>
+                <a href="https://www.reddit.com/user/Patosalvaje1212/" aria-label="Reddit" target="_blank">💬</a>
+                <a href="https://open.spotify.com/user/patosalvaje1212/" aria-label="Spotify" target="_blank">🎵</a>
+            </div>
+            <p>&copy; 2025 PatoSalvaje. All rights reserved.</p>
+            <p>Hand-crafted with pixels and passion.</p>
+        </div>
+    </footer>
+    
+</body>
 </html>
