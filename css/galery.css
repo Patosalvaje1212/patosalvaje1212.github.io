@@ -150,6 +150,10 @@ nav {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
 }
 
 
@@ -171,6 +175,8 @@ nav {
     display: flex;
     justify-content: center;
     overflow: hidden;
+
+    
 }
 
 .art-card.visible {
@@ -192,7 +198,11 @@ nav {
     height: auto;
     object-fit: cover;
     image-rendering: pixelated;
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
+
+    border-bottom: 3px solid var(--primary);
+
+    will-change: transform;
 }
 
 
