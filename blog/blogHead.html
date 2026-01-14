@@ -82,9 +82,16 @@
                         
             animateOnScroll(document.querySelectorAll('.skill-category'), 0.15);
         });
-        fetch(fileP).then( x => document.getElementById('mbody').innerHTML =
-            marked.parse(x)
-        );
+
+        const fData = fetch(fileP);
+        const r = await fData;
+        const tData = r.text();
+        const t = await tData;
+        
+        document.getElementById('mbody').innerHTML =
+            marked.parse(t);
+        
+        
         
     </script>
 </body>
