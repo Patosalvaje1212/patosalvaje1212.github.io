@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:title" content="Patosalvaje's Portfolio!">
+    <meta name="twitter:description" content="Get a look around on how I do things">
+    <meta property="og:image" content="https://github.com/Patosalvaje1212/patosalvaje1212.github.io/blob/main/res/pfp.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://github.com/Patosalvaje1212/patosalvaje1212.github.io/blob/main/res/pfp.png">
+    <link rel = "stylesheet" href ="../css/blog/blogstyle.css">
+    <title> PatoSalvaje's Blog</title>
+</head>
+<body>
+    <div class="pixel-grid"></div>
+
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">PatoSalvaje</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div id="mbody"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://x.com/Patosalvaje1212/" aria-label="Twitter" target="_blank">🐦</a>
+                <a href="https://patosalvaje.itch.io" aria-label="Itch.io" target="_blank">🎮</a>
+                <a href="https://www.reddit.com/user/Patosalvaje1212/" aria-label="Reddit" target="_blank">💬</a>
+                <a href="https://open.spotify.com/user/patosalvaje1212/" aria-label="Spotify" target="_blank">🎵</a>
+            </div>
+
+            <p><img src="https://visitor-badge.laobi.icu/badge?page_id=https://patosalvaje1212.github.io/&left_text=Visitor%20Number&left_color=%236a5acd&right_color=%23d57fe4&format=true"
+            alt="Visitor Counter"
+            style="height:20px;image-rendering:pixelated;"></p>
+            <p> </p>
+
+            <div class="container"> </div>
+
+            <p>&copy; 2026 PatoSalvaje. All rights reserved.</p>
+            <p>Hand-crafted with pixels and passion.</p>
+
+        </div>
+    </footer>
+    
+    <script type="module">
+        import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+        const fileP = "markdown/blogHead.md";
+
+        const animateOnScroll = (elements, stagger = 0.1) => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                            setTimeout(() => {
+                                entry.target.style.transition = 
+                                    'transform 0.3s ease, box-shadow 0.3s ease';
+                            }, 500);
+                        }, index * stagger * 1000 + 250);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(element => observer.observe(element));
+        };
+        
+        document.addEventListener('DOMContentLoaded', () => {            
+            animateOnScroll(document.querySelectorAll('.portfolio-item'), 0.1);
+                        
+            animateOnScroll(document.querySelectorAll('.skill-category'), 0.15);
+        });
+        const fs = new FileReader();
+        document.getElementById('mbody').innerHTML =
+            marked.parse(fetch(fileP));
+
+    </script>
+</body>
+</html>
